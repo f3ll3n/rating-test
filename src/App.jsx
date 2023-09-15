@@ -10,7 +10,7 @@ export default function App() {
       <Header/>
       <div className="pages">
       <Routes>
-        <Route index element={<Navigate to="/examples" />} />
+        <Route path='/rating-test' element={<Navigate to="/examples" />} />
         <Route path='/sandbox' element={<Sandbox />} />
         <Route path='/examples' element={<ExamplesPage />} />
       </Routes>
