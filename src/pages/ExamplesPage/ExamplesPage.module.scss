@@ -1,0 +1,15 @@
+.cards{
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    transition: .3s;
+}
+@media screen and (max-width:820px) {
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

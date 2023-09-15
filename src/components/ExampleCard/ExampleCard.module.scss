@@ -1,0 +1,35 @@
+.exampleCard{
+    width: calc(50% - 16px);
+    background-color: rgb(43, 42, 42);
+    color: #e7e7e7;
+    height: 80px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: .3s;
+    border: 2px solid  rgb(105, 105, 105);
+}
+.exampleCard:hover{
+   cursor: pointer;
+   background-color: rgb(54, 54, 54);
+}
+.card_header{
+    font-size: 20px;
+    height: 26px;
+    font-weight: 300;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+}
+.card_parameters{
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width:820px) {
+    .exampleCard{
+        width: 100%;
+        
+    }
+}

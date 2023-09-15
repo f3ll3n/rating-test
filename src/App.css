@@ -1,0 +1,142 @@
+.App {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  
+  padding: 0;
+  min-height: 100vh;
+}
+.pages{
+  max-width: 1260px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+.rating_block {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(73, 73, 73);
+}
+.rating_line {
+  color: #fff;
+  overflow: hidden;
+  font-weight: bold;
+  background-color: rgb(100, 100, 100);
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(45deg, rgb(255, 57, 57) 0%, rgb(170, 170, 170) 40%, rgb(170, 170, 170) 50%, rgb(81, 255, 81));
+
+  border: 2px solid #fff;
+  box-shadow: inset -2px 2px 10px rgb(160,160,160) !important;
+  border-radius: 60px;
+  z-index: 99;
+}
+.rating_line_inner {
+  position: absolute;
+  z-index: -50;
+  top: 0;
+  background-color: gray;
+  width: 100%;
+  height: 60px;
+  transition: 0.2s;
+}
+.title {
+  background-color: rgb(182, 0, 0);
+  font-size: 19px;
+  padding: 1px 5px 5px 5px;
+  margin: 3px 0 20px 0;
+  color: #fff;
+  display: inline-block;
+}
+.rating_value {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  font-size: 26px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  font-weight: 400;
+  display: flex;
+}
+.buttons_block {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.buttons_block button {
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: #444444;
+  color: #fff;
+  border-radius: 7px;
+  font-weight: 400;
+  padding: 20px;
+  transition: 0.2s;
+  font-size: 17px;
+}
+.buttons_block button:hover {
+  border: 1px solid #000;
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(30, 50, 40);
+  border-radius: 7px;
+  padding: 20px;
+}
+.buttons_block button:active {
+  background-color: rgb(130, 150, 140);
+  border-radius: 15px;
+  outline-offset: 10px solid red;
+}
+.profile_block {
+  max-width: 500px;
+  margin: 0 auto 10px auto;
+  padding: 20px 0 20px 0;
+  border-radius: 7px;
+  color: #fff;
+  border: 1px solid #000;
+}
+.level_element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 23px;
+  border-radius: 50%;
+  color: #fff;
+  height: 30px;
+  background-color: rgb(120, 110, 200);
+  width: 30px;
+}
+.profile_item {
+  padding: 4px;
+}
+.input{
+  transition: .2s;
+  padding: 18px 25px;
+  cursor: text;
+  background-color: #444444;
+  border: 1px solid #000; 
+  color: #fff;
+}
+.input::placeholder{
+  color: #d1d1d1;
+}
+
+.input:focus{
+  transform: scale(1.1);
+  color: #fff;
+  background-color: rgb(30, 50, 40);
+}
