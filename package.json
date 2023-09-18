@@ -2,6 +2,7 @@
   "name": "rating-test",
   "private": true,
   "homepage": "https://f3ll3n.github.io/rating-test",
+  "base": "/rating-test",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
