@@ -99,9 +99,14 @@
   border-radius: 15px;
   outline-offset: 10px solid red;
 }
+.profile_params{
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+}
 .profile_block {
-  max-width: 500px;
-  margin: 0 auto 10px auto;
+  width: 70%;
+  margin: 0 10px;
   padding: 20px 0 20px 0;
   border-radius: 7px;
   color: #fff;
@@ -139,4 +144,14 @@
   transform: scale(1.1);
   color: #fff;
   background-color: rgb(30, 50, 40);
+}
+
+
+
+@media screen and (max-width: 615px) {
+  .profile_params{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
 }

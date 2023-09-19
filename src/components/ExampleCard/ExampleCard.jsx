@@ -1,11 +1,11 @@
 import style from './ExampleCard.module.scss';
 
-export default function ExampleCard() {
+export default function ExampleCard({name}) {
   return (
     <div className={style.exampleCard}>
         <div className={style.card_header}>
             <div>
-                333-00122
+                {name}
             </div>
             <div>
                 Уровень: <span className={style.card_number}>6</span>

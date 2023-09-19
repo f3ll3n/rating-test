@@ -1,0 +1,12 @@
+.actionList{
+    border: 1px solid #323232;
+    width: 325px;
+    box-sizing: border-box;
+}
+.action_list{
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 5px;
+    height: 300px;
+}

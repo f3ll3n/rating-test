@@ -8,22 +8,18 @@ export const Events = (props) => {
         if(props.data.ordersCount < 5){
             points = 20
         }
-        props.changeRating('increase', points);
+        props.changeRating('order', points, '', true);
     };
 
     const addLateStreak = () => {
         props.setShowLateCount(props.data.showLateCount + 1);
         props.setErrorStreak(props.data.errorStreak + 1);
-        console.log(props.data.errorStreak);
-        if (props.data.errorStreak >= 2) {
-            props.setErrorStreak(0);
-            props.changeRating('decrease', 50);
-        }
+        props.changeRating('late', 50, '', true);
     };
 
     const addNoShowStreak = () => {
         props.setNoshowstreak(props.data.noShowStreak + 1);
-        props.changeRating('decrease', props.data.noShowStreak * 50);
+        props.changeRating('ntd', props.data.noShowStreak * 50, '', true);
     };
     
     const handleOnClearData = () => {
@@ -36,6 +32,10 @@ export const Events = (props) => {
             props.changeRating('input', points, inputRef.current.value)
             inputRef.current.value = ''
         }
+    }
+
+    if (props.data.isExample){
+        return (<></>)
     }
 
     return(
