@@ -1,44 +1,44 @@
-.header{
-    background-color: rgb(56, 56, 56);
-    .nav{
-        .nav_list{
-            display: flex;
-            margin: 0;
-            padding: 7px;
-            justify-content: center;
-            gap: 16px;
-            list-style: none;
-            .nav_item{
-                position: relative;
-                transition: .2s;
-                color: #ffffff
-            }
-            .nav_item::before{
-                    transition: .1s;
-                    content: '';
-                    position: absolute;
-                    bottom: -2px;
-                    left: 0;
-                    display: block;
-                    background-color: rgb(255, 45, 45);
-                    height: 1px;
-                    width: 0%;
-            }
-            .active{
-                color: rgb(255, 45, 45);
-                position: relative;
-            }
-            .active::before{
-                transition: .1s;
-                content: '';
-                position: absolute;
-                bottom: -2px;
-                left: 0;
-                display: block;
-                background-color: rgb(255, 45, 45);
-                height: 1px;
-                width: 100%;
-            }
-        }
+.header {
+  background-color: rgb(56, 56, 56);
+  .nav {
+    .nav_list {
+      display: flex;
+      margin: 0;
+      padding: 7px;
+      justify-content: center;
+      gap: 16px;
+      list-style: none;
+      .nav_item {
+        position: relative;
+        transition: 0.2s;
+        color: #ffffff;
+      }
+      .nav_item::before {
+        transition: 0.1s;
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        display: block;
+        background-color: rgb(255, 45, 45);
+        height: 1px;
+        width: 0%;
+      }
+      .active {
+        color: rgb(255, 45, 45);
+        position: relative;
+      }
+      .active::before {
+        transition: 0.1s;
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        display: block;
+        background-color: rgb(255, 45, 45);
+        height: 1px;
+        width: 100%;
+      }
     }
+  }
 }
