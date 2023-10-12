@@ -1,0 +1,15 @@
+.exampleCard{
+    border-radius: 4px;
+    width: 100%;
+    padding: 15px 10px;
+}
+.card_header{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.card_header *{
+    text-decoration:dotted;
+    color: #000;
+
+}
